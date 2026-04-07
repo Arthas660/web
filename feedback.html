@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв’язок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Зворотній зв’язок</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <label for="name">Ім’я</label><br>
+    <input type="text" id="name" name="name" placeholder="Введіть ім’я"><br><br>
+
+    <label for="lastname">Прізвище</label><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Введіть прізвище"><br><br>
+
+    <label for="email">Електронна пошта</label><br>
+    <input type="email" id="email" name="email" placeholder="example@mail.com"><br><br>
+
+    <label for="phone">Номер телефону</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+380..."><br><br>
+
+    <label for="message">Текст повідомлення</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Введіть повідомлення"></textarea><br><br>
+
+    <p>Оберіть спосіб зворотного зв’язку:</p>
+    <label>
+        <input type="radio" name="contact_method" value="phone">
+        Телефон
+    </label><br>
+    <label>
+        <input type="radio" name="contact_method" value="email">
+        Електронна пошта
+</label><br><br>
+
+    <label for="type">Тип повідомлення</label><br>
+    <select id="type" name="type">
+        <option value="question">Питання</option>
+        <option value="suggestion">Побажання</option>
+        <option value="complaint">Скарга</option>
+    </select><br><br>
+
+    <label for="image">Додати зображення</label><br>
+    <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+    <button type="submit">Відправити</button>
+
+</form>
+
+</body>
+</html>
